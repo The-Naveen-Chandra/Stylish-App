@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,33 +63,12 @@ class HomeScreen extends StatelessWidget {
               child: SearchForm(),
             ),
             const Categories(),
+            const SizedBox(height: defaultPadding),
+            const NewArrival(),
             const SizedBox(
               height: defaultPadding,
             ),
-            SectionTitle(
-              title: "New Arrival",
-              pressSeeAll: () {},
-            ),
-            Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    borderRadius: BorderRadius.circular(defaultBorderRadius),
-                  ),
-                  child: Image.asset(
-                    "assets/images/product_0.png",
-                    height: 132,
-                  ),
-                ),
-                const Text(
-                  "Long Sleeve Shirts",
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),
-                ),
-              ],
-            ),
+            const PopularCategory()
           ],
         ),
       ),
