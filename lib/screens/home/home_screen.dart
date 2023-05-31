@@ -45,12 +45,19 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Explore",
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineLarge!
-                  .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Explore",
+                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                      fontWeight: FontWeight.w500, color: Colors.black),
+                ),
+                Image.asset(
+                  'assets/images/logo.png',
+                  width: 150.0,
+                ),
+              ],
             ),
             const Text(
               "Best outfits for you <3",

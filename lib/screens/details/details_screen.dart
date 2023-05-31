@@ -22,6 +22,11 @@ class DetailScreen extends StatelessWidget {
         leading: const BackButton(
           color: Colors.black,
         ),
+        title: Image.asset(
+          'assets/images/logo.png',
+          width: 150.0,
+        ),
+        centerTitle: true,
         actions: [
           CircleAvatar(
             backgroundColor: Colors.white,
