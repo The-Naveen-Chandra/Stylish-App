@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_app/constants/constants.dart';
-import 'package:stylish_app/screens/home/home_screen.dart';
+import 'package:stylish_app/screens/intro/intro_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,10 +22,9 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Colors.black54),
         ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const IntroPage(),
     );
   }
 }
