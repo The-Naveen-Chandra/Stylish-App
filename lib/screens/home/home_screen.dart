@@ -65,9 +65,7 @@ class HomeScreen extends StatelessWidget {
             const Categories(),
             const SizedBox(height: defaultPadding),
             const NewArrival(),
-            const SizedBox(
-              height: defaultPadding,
-            ),
+            const SizedBox(height: defaultPadding),
             const PopularCategory()
           ],
         ),
